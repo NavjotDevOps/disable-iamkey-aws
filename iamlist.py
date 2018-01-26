@@ -81,7 +81,7 @@ def validate_iam_key():
         if age >= warning_time_limit and age <=disable_time_limit:
             send_deactivate_email(user_name, age, access_key_id)
         elif age  >= disable_time_limit:
-            # disable_access_key(access_key_id, user_name,age)
+            disable_access_key(access_key_id, user_name,age)
             # enable_access_key(access_key_id, user_name, age)
             # delete_access_key(access_key_id, user_name, age)
 
